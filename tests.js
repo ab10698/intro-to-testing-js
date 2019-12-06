@@ -52,3 +52,19 @@ describe("sayHello", function() {
     });
 
 });
+
+
+describe("isFive", function() {
+    it("Should be a defined function", function() {
+        expect(typeof isFive).toBe("function");
+    });
+    it("Should return true if 5", function() {
+        expect(isFive(5)).toBe(true);
+    });
+    it("should return false if '5'", function() {
+       expect(isFive("5")).toBe(false);
+    });
+    it("Should be a boolean", function() {
+       expect(typeof isFive()).toBe("boolean");
+    });
+});
